@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宇衡·认知工厂</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0a0a0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 60px 20px;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { font-size: 2.4rem; font-weight: 700; margin-bottom: 8px; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: #888; font-size: 1rem; margin-bottom: 50px; }
+    .projects { display: flex; flex-direction: column; gap: 16px; }
+    .project-card {
+      background: #16161d;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .project-card:hover { border-color: #667eea; transform: translateY(-2px); }
+    .project-info h3 { font-size: 1.1rem; margin-bottom: 4px; }
+    .project-info p { font-size: 0.85rem; color: #888; }
+    .badge { padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+    .active { background: #1a4d2e; color: #4ade80; }
+    .maintenance { background: #1a3a4d; color: #60a5fa; }
+    .planned { background: #3d2e1a; color: #fbbf24; }
+    .standby { background: #2e1a3d; color: #a78bfa; }
+    .footer { margin-top: 60px; text-align: center; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>宇衡·认知工厂</h1>
+    <p class="subtitle">VBC 系列项目统一入口 · 代码/工具线</p>
+
+    <div class="projects">
+      <a href="https://8d.arayucofe.com.cn" target="_blank" class="project-card">
+        <div class="project-info">
+          <h3>VBC-002 · 工业8D质量工具</h3>
+          <p>工业场景质量问题结构化分析报告生成工具，含CQE实战案例库</p>
+        </div>
+        <span class="badge maintenance">MAINTENANCE</span>
+      </a>
+
+      <a href="https://treenomad.github.io/Personal-portfolio/" target="_blank" class="project-card">
+        <div class="project-info">
+          <h3>VBC-003 · 个人作品集</h3>
+          <p>个人品牌展示站点，GitHub Pages部署</p>
+        </div>
+        <span class="badge maintenance">MAINTENANCE</span>
+      </a>
+
+      <a href="https://treenomad.github.io/VB003-ablif-daily-decoder/" target="_blank" class="project-card">
+        <div class="project-info">
+          <h3>VBC-004 · ABLIF解码可视化</h3>
+          <p>每日cronjob ABLIF日报可视化展示</p>
+        </div>
+        <span class="badge maintenance">MAINTENANCE</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      最后更新：2026-05-08 · VBC-001 入口页创建
+    </div>
+  </div>
+</body>
+</html>
